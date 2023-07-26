@@ -67,6 +67,14 @@ h2 {
 .input:focus {
     border: 1px solid #000;
 }
+.input .correcto{
+    border: 1px solid green;
+}
+.input .incorrecto{
+    border: 1px solid red;
+}
+
+
 
 .label {
     font-size: 20px;

@@ -14,8 +14,8 @@
 
 <body>
     <div class="contenedor-img">
-    <img src="./img/bylett logo-02 (1).png" alt="logo">
-</div>
+        <img src="./img/bylett logo-02 (1).png" alt="logo">
+    </div>
     <main class="contenedor">
 
         <section class="section">
@@ -24,20 +24,23 @@
             <form action="" class="formulario" id="form">
 
                 <label class="label" for="">E-mail</label>
-                <input class="input" type="email" name="email" id="email" placeholder="ByLett@lettcomercial.com">
+                <input class="input " type="email" name="email" id="email" placeholder="ByLett@lettcomercial.com"
+                    required>
 
                 <label class="label" for="">Nombre</label>
-                <input class="input" type="text" name="nombre" id="nombre" placeholder="Lett">
+                <input class="input " type="text" name="nombre" id="nombre" placeholder="Lett" required>
 
                 <label class="label" for="">Apellido</label>
-                <input class="input" type="text" name="apellido" id="apellido" placeholder="Comercial">
+                <input class="input " type="text" name="apellido" id="apellido" placeholder="Comercial" required>
 
             </form>
-            <button id="guardar" class="btn" type="submit" onclick="guardar()">PARTICIPA</button>
+            <button id="guardar" class="btn" type="submit" onclick="validar()">PARTICIPA</button>
             <button id="ver" class="btn" type="submit" onclick="ver()">VER</button>
             <h1 id="imprimir"></h1>
         </section>
     </main>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- firebase-->
     <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
@@ -45,7 +48,7 @@
     <!-- link js-->
     <script src="./configuracion.js"></script>
     <script src="./script.js"></script>
-    
+
 </body>
 
 </html>
