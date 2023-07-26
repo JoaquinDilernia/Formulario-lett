@@ -7,6 +7,7 @@
 .contenedor-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 img {
     width: 90%;
@@ -42,7 +43,7 @@ h2 {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    color: #000;
+    color: #28345e;
     margin: 10px;
 }
 
@@ -65,21 +66,13 @@ h2 {
 }
 
 .input:focus {
-    border: 1px solid #000;
+    border: 3px solid #28345e;
 }
-.input .correcto{
-    border: 1px solid green;
-}
-.input .incorrecto{
-    border: 1px solid red;
-}
-
-
 
 .label {
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: #28345e;
 }
 
 .btn {
@@ -92,12 +85,16 @@ h2 {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
-    background-color: #000;
+    background-color: #28345e;
     cursor: pointer;
     transition: .3s ease all;
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #000;
+    transform: scale(1.01);
+    box-shadow: 0 0 0.5rem #28345e;
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
 }
